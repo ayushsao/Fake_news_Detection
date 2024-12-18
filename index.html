@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fake News Detector</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📰 Fake News Detection </h1>
+            <p>Empowered by Techgiants to verify your news headlines instantly</p>
+        </header>
+
+        <section class="input-section">
+            <input type="text" id="newsHeadline" placeholder="Paste or type a news headline..." />
+            <button onclick="checkNews()">Analyze <i class="fas fa-search"></i></button>
+        </section>
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Analyzing... Please wait</p>
+        </div>
+
+        <section class="result-section">
+            <div id="result" class="hidden">
+                <h2>Result</h2>
+                <p id="resultText"></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 AI Fake News Detector. Powered by Techgiants.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
